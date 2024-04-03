@@ -1,0 +1,106 @@
+body{
+    background-color: black;
+}
+
+.mo-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    color: #763c8c;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    
+  }
+  
+  .lines {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .line {
+    height: 1px;
+    width: 40%;
+    background: #763c8c;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .line--left {
+    left: -5%;
+  }
+  
+  .line--right {
+    right: -5%;
+  }
+  
+  .blups {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+  }
+  
+  .blup {
+    width: 3rem;
+    height: 3rem;
+    background: #fa4843;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1rem;
+    left: -2rem;
+    animation: float 4s linear infinite;
+  }
+  
+  .blop {
+    width: 3rem;
+    height: 3rem;
+    background: #fa4843;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -1rem;
+    right: -2rem;
+    animation: float 4s linear infinite reverse;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .sound {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
